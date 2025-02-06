@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #1d2c3c;
+  --left-margin: 20px;
+}
+body {
+  background-color: #f5f8fa;
+  font-family: "Lato", sans-serif;
+}
+/* logo */
+.logo {
+  width: 100px;
+  height: 20px;
+  margin-block-start: 15px;
+  margin-inline-start: var(--left-margin);
+}
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 2px solid #e0e6ea;
+}
+nav {
+  margin-block-start: 15px;
+}
+nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 25px;
+}
+nav > ul > li > a {
+  color: var(--main-color);
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+/* button in the navbar */
+#account {
+  border: 2px solid #646e7a;
+  border-radius: 4px;
+  padding: 5px;
+}
+main {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  column-gap: 0px;
+}
+/* first section  */
+.checkout {
+  background-color: white;
+  margin-block: 50px 0px;
+}
+.check {
+  border-bottom: 2px solid #f5f8fa;
+}
+.check > h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 0.8;
+  width: 50%;
+  padding: 20px 0px 15px 20px;
+  color: var(--main-color);
+}
+/* client details and payment info form heading */
+.info {
+  margin-block-start: 25px;
+  margin-inline-start: var(--left-margin);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 0.8;
+  color: var(--main-color);
+}
+/* client details and payment info span */
+.one {
+  color: #548bc5;
+  display: inline-block;
+  width: 15px; /* Circle diameter */
+  height: 15px; /* Circle diameter */
+  border: 2px solid #548bc5;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 0.7;
+}
+/* conatiner for each label and input */
+.forms {
+  margin-inline-start: var(--left-margin);
+  display: flex;
+  flex-direction: column; /* Label above input */
+}
+/* container for forms */
+.form-group {
+  margin-block-start: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for label-input pairs */
+  gap: 5px; /* Space between columns */
+}
+.email {
+  margin-block-start: 10px;
+}
+.credit {
+  margin-inline-start: var(--left-margin);
+  margin-block: 15px 30px;
+}
+/* all labels */
+label {
+  display: block; /* Makes the label occupy its own line */
+  margin-block-end: 5px; /* Adds space below the label */
+  width: 70%;
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 0.8;
+}
+/* all input */
+.input {
+  width: 90%;
+  height: 35px;
+  padding-left: 10px;
+  border: 1px solid #edeff2;
+  background-color: #edeff2;
+  border-radius: 5px;
+}
+/* submit button */
+.submit {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 0.8;
+  color: #ffffff;
+  background-color: #038e7d;
+  border: 2px solid #038e7d;
+  border-radius: 5px;
+  width: 85%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-inline-start: var(--left-margin);
+}
+/* ending paragraph */
+#support {
+  margin-inline-start: 60px;
+  margin-block: 15px 10px;
+  width: 75%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 0.8;
+}
+#support > span {
+  width: 14px; /* Circle diameter */
+  height: 14px;
+  border-radius: 50%;
+}
+.hesitate {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.8;
+  color: grey;
+}
+#stripe {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  background-color: #dadada;
+  color: white;
+  width: 25%;
+  font-size: 0.5rem;
+  line-height: 0.3;
+  margin-block: 25px 40px;
+  padding: 5px;
+}
+.strip {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+/* sidebar section */
+.sidebar {
+  background-color: #1179bf;
+  margin-block: 50px 0px;
+  padding: 20px 20px 0px 30px;
+  width: 70%;
+  color: #ffffff;
+}
+#freelancer {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 0.8;
+  margin-block-end: 13px;
+}
+/* amount per year style */
+#num {
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 0.8;
+}
+#sign {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 0.8;
+  position: relative;
+  top: -13px;
+}
+#slash {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 0.8;
+}
+#renew {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-style: italic;
+  margin-block-start: 10px;
+  width: 75%;
+}
+.list {
+  margin-block-start: 15px;
+}
+.list > ul > li {
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 2;
+  list-style: none;
+}
+.list > ul > li::before {
+  content: url("/CSS Assignment 5/asset/checkmark.svg"); /* Add an image */
+  display: inline-block; /* Make it behave like an image */
+  padding-right: 5px;
+}
+.need {
+  margin-block-start: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+#agency {
+  font-weight: 700;
+  display: inline;
+  border-bottom: 2px solid #b9f5ff;
+}
+#ftp {
+  margin-block-start: 30px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* kirk beard */
+.beard {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+.kirk {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+footer {
+  margin-block: 25px 25px;
+}
+footer > p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+}
+footer > p > span {
+  color: lightgreen;
+}
+@media (max-width: 767.98px) {
+  header {
+    min-width: 550px;
+  }
+  .checkout {
+    min-width: 310px;
+  }
+  .sidebar {
+    width: 90%;
+    padding-bottom: 20px;
+    min-width: 200px;
+  }
+  #renew {
+    min-width: 155px;
+  }
+  .list {
+    min-width: 175px;
+  }
+  #agency {
+    min-width: 170px;
+  }
+  #ftp {
+    width: 70%;
+    min-width: 200px;
+  }
+  #stripe {
+    width: 30%;
+    min-width: 93px;
+  }
+}
+@media (min-width: 768px) {
+  #support {
+    width: 70%;
+    max-width: 286px;
+  }
+  #stripe {
+    width: 30%;
+    max-width: 93px;
+  }
+  #renew {
+    min-width: 155px;
+    max-width: 155px;
+  }
+  #agency {
+    max-width: 182px;
+  }
+  #ftp {
+    max-width: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .sidebar {
+    max-width: 340px;
+  }
+}

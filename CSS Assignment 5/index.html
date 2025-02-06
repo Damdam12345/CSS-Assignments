@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>CSS Assignment 5</title>
+  </head>
+  <body>
+    <!--heading which includes logo and navigation bar-->
+    <header>
+      <img src="/CSS Assignment 5/asset/logo.png" alt="WP Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn More</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li>
+            <a href="#"><button id="account">Account</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--client details section-->
+      <section class="checkout">
+        <div class="check">
+          <h3>Checkout</h3>
+        </div>
+        <form action="/submit" method="post" aria-label="Client Details">
+          <h3 class="info">
+            <span class="one">1</span> Your Basic Information
+          </h3>
+          <div class="form-group">
+            <!--names-->
+            <div class="forms">
+              <label for="Fname">First Name</label>
+              <input
+                type="text"
+                id="Fname"
+                name="fname"
+                placeholder="Jane"
+                class="input"
+              />
+            </div>
+            <div class="forms">
+              <label for="Lname">Last Name</label>
+              <input
+                type="text"
+                id="Lname"
+                name="lname"
+                placeholder="Doe"
+                class="input"
+              />
+            </div>
+          </div>
+          <div class="forms">
+            <!--email-->
+            <label for="email" class="email">E-mail</label>
+            <input
+              type="mail"
+              id="email"
+              name="ename"
+              placeholder="janedoe@gmail.com"
+              class="input"
+            />
+          </div>
+          <!--payment information-->
+          <h3 class="info">
+            <span class="one">2</span> Your Payment Information
+          </h3>
+          <div class="credit">
+            <label for="credcard">Credit Card</label>
+            <input
+              type="text"
+              id="credcard"
+              name="credcard"
+              placeholder="Card Number MM/YY CVC"
+              class="input"
+            />
+          </div>
+        </form>
+        <!--submit button-->
+        <button type="submit" class="submit">Buy WP Pusher</button>
+        <p id="support">
+          <span class="one">?</span> Need any help?
+          <span class="hesitate">Don't hesitate to contact support!</span>
+        </p>
+        <p id="stripe">Powered by <span class="strip">Stripe</span></p>
+      </section>
+      <!--sidebar/section containing company info-->
+      <section class="sidebar">
+        <p id="freelancer">Freelancer</p>
+        <!--amount per year-->
+        <p class="year">
+          <span id="sign">$</span>
+          <span id="num">99</span>
+          <span id="slash">/ year</span>
+        </p>
+        <p id="renew">Automatically renews after 1 year</p>
+        <div class="list">
+          <ul>
+            <li>Use on <b>5</b> client sites</li>
+            <li>Private Repositories</li>
+            <li>Email Support</li>
+          </ul>
+        </div>
+        <div class="need">
+          <p>Need <b>20</b> client sites</p>
+          <p id="agency">Switch to the agency plan</p>
+        </div>
+        <p id="ftp">
+          FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, and
+          the customer support is awesome!
+        </p>
+        <p>
+          <img src="/CSS Assignment 5/asset/kirk.png" alt="Image of Kirk Beard" class="beard" />
+          <span id="kirk">Kirk Beard</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2018 WP Pusher IVS · <span>Terms of Service</span></p>
+    </footer>
+    <a href="/index.html" style="color: blueviolet;">ROOT FILE</a>
+  </body>
+</html>

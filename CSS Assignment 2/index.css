@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --left-margin: 24px 0px;
+  --space: -0.005em;
+}
+body {
+  font: 400 1.2rem/1.6 "Lato", sans-serif;
+}
+header {
+  border-bottom: 8px solid #999999;
+}
+header h2 {
+  width: 18%;
+  margin-block: 96px 0px;
+  margin-inline: var(--left-margin);
+}
+#text2 {
+  width: 34%;
+  margin-block: 35px 0px;
+  margin-inline: var(--left-margin);
+  letter-spacing: var(--space);
+}
+#text2 span {
+  font-weight: 800;
+  color: #228b22;
+}
+#text3 {
+  width: 34%;
+  margin-block: 10px 50px;
+  margin-inline: var(--left-margin);
+  letter-spacing: var(--space);
+}
+main {
+  background-color: #666666;
+  padding-block: 40px 0px;
+  height: 400px;
+}
+.card {
+  background-color: white;
+  border-bottom: 8px solid #999999;
+}
+#banner {
+  width: 90%;
+  padding-block: 7px 7px;
+  padding-inline: var(--left-margin);
+  font: 800 1.5rem/1.2 "Lato", sans-serif;
+  background-color: #ffbf00;
+  border-bottom: 5px solid #cc9900;
+  position: relative;
+  top: 7px;
+}
+#intro {
+  margin-block: 20px 0px;
+  margin-inline: var(--left-margin);
+  font: 500 1.25rem/1.5 "Lato", sans-serif;
+}
+#outro {
+  margin-block: 10px 0px;
+  margin-inline: var(--left-margin);
+  font: 500 1.25rem/1.5 "Lato", sans-serif;
+}
+/* Extra small devices (phones, <768px) */
+@media (max-width: 767.98px) {
+  header h2 {
+    width: 25%;
+    min-width: 230px;
+  }
+  #text2,
+  #text3,
+  #banner {
+    width: 40%;
+    min-width: 306px;
+  }
+  main {
+    height: 0px;
+  }
+  #intro,
+  #outro {
+    width: 90%;
+    min-width: 350px;
+  }
+}
+/* Medium devices (768px and larger) */
+@media (min-width: 768px) {
+  header,
+  main,
+  .card {
+    max-width: 1024px;
+  }
+  header h2 {
+    width: 25%;
+  }
+  #text2 {
+    width: 55%;
+    max-width: 400px;
+  }
+  #text3 {
+    width: 50%;
+    max-width: 300px;
+  }
+  main {
+    height: 350px;
+  }
+  #banner {
+    width: 50%;
+    max-width: 400px;
+  }
+  #intro,
+  #outro {
+    width: 95%;
+  }
+}
+/* Large devices (desktops, 1024px and larger) */
+@media (min-width: 1024px) {
+  header,
+  main,
+  .card {
+    max-width: 1200px;
+  }
+  #text2,
+  #text3 {
+    margin-inline: 200px 0px;
+  }
+  header > h2 {
+    width: 25%;
+    margin-inline: 130px 0px;
+    text-align: center;
+  }
+  .card {
+    border-bottom: 8px solid #999999;
+    margin: 0 auto;
+    width: 70%;
+  }
+  #intro,
+  #outro {
+    width: 95%;
+  }
+}
